@@ -1,16 +1,30 @@
 import React, { useState } from 'react';
+
+import bp from "../../asset/b_p.png";
+import wp from "../../asset/w_p.png";
+import wh from "../../asset/w_h.png";
+import bh from "../../asset/b_h.png";
+import wb from "../../asset/w_b.png";
+import bb from "../../asset/b_b.png";
+import we from "../../asset/w_e.png";
+import be from "../../asset/b_e.png";
+import wk from "../../asset/w_k.png";
+import bk from "../../asset/b_k.png";
+import wq from "../../asset/w_q.png";
+import bq from "../../asset/b_q.png";
+
 import './index.css';
 
 const Chessboard = () => {
   const initialBoard = [
-    ['R', 'https://cdn.pixabay.com/photo/2018/05/19/12/48/chess-black-horse-3413410_640.png', 'B', 'Q', '	&#9812', 'B', 'https://cdn.pixabay.com/photo/2018/05/19/12/48/chess-black-horse-3413410_640.png', 'R'],
-    ['https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_640.png'],
+    [be, bh, bb, bq,bk, bb, bh, be],
+    [bp, bp, bp, bp, bp, bp, bp, bp],
     ['', '', '', '', '', '', '', ''],
     ['', '', '', '', '', '', '', ''],
     ['', '', '', '', '', '', '', ''],
     ['', '', '', '', '', '', '', ''],
-    ['https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_640.png', 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_640.png'],
-    ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+    [wp, wp, wp, wp, wp, wp, wp, wp],
+    [we, wh, wb, wq, wk, wb, wh, we],
   ];
 
   const [board, setBoard] = useState(initialBoard);
